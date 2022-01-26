@@ -1,8 +1,5 @@
 fun main() {
-    val n = readLine()!!.trim().toInt()
-
     val a = readLine()!!.trimEnd().split(" ").map{ it.toInt() }.toTypedArray()
-
     countSwaps(a)
 }
 fun countSwaps(a: Array<Int>): Unit {
@@ -20,4 +17,5 @@ fun countSwaps(a: Array<Int>): Unit {
     println("Array is sorted in $count swaps.")
     println("First Element: ${a[0]}")
     println("Last Element: ${a[a.size - 1]}")
+
 }
