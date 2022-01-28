@@ -2,11 +2,11 @@ fun main() {
 //    var bilangan = intArrayOf(4,3,5,6,3)
 //    print(selectionSortInt(bilangan))
 
-//    var nama = arrayOf("Farhan"," "," Farras", " ", " Baharudin", " ", " Budi")
-//    print(selectionSortString(nama))
+    var nama = arrayOf("Farhan"," "," Farras", " ", " Baharudin", " ", " Budi")
+    print(selectionSortString(nama))
 
-    var ipk = doubleArrayOf(1.5, 1.3, 9.5, 4.9, 5.3)
-    print(selectionSortDouble(ipk))
+//    var ipk = doubleArrayOf(1.5, 1.3, 9.5, 4.9, 5.3)
+//    print(selectionSortDouble(ipk))
 }
 // fungtion untuk tipe data integer
 fun selectionSortInt(arr : IntArray) {
