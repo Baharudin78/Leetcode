@@ -1,7 +1,7 @@
 fun main() {
 
-    var nama = arrayOf("Baharudin, farhan, nova, muri")
-    sequetialSearchString(nama, "nova")
+    var nama = arrayOf("Baharudin", "farhan", "muri", "nova")
+    sequetialSearchString(nama, "mUri")
 
 //    var arr = intArrayOf(3,5,6,7,8,9,1,2,10)
 //    var key = 9
@@ -11,9 +11,10 @@ fun main() {
 fun sequetialSearchString(nama : Array<String>, keyWord : String)  {
     var status = false
     for (i in nama.indices) {
-        if (nama[i] == keyWord){
+        if (nama[i].equals(keyWord, ignoreCase = false)){
             println("Nama $keyWord telah ditemukan di index ke- $i")
             status = true
+            break
         }
     }
     if (!status) {
